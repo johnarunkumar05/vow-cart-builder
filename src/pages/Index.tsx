@@ -139,7 +139,7 @@ export default function Index() {
           </Card>
 
           {/* Planning Mode Toggle */}
-          <div className="flex justify-center mt-6">
+          <div className="flex justify-center mt-6 space-x-4">
             <div className="bg-white/10 backdrop-blur-sm rounded-full p-1">
               <Button
                 variant={planningMode === "diy" ? "default" : "ghost"}
@@ -158,6 +158,15 @@ export default function Index() {
                 With Planner
               </Button>
             </div>
+            
+            <Button 
+              size="lg" 
+              className="bg-gradient-primary hover:opacity-90 text-white font-semibold px-8"
+              onClick={() => window.location.href = '/questionnaire'}
+            >
+              <Heart className="w-5 h-5 mr-2" />
+              Build a Wedding from Scratch
+            </Button>
           </div>
         </div>
       </section>
